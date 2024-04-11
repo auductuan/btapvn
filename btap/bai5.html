@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Start String</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+    <h1>Check Start String</h1>
+    <p id="result"></p>
+
+    <script>    
+        function checkStartString(longString, shortString) {
+            return longString.startsWith(shortString);
+        }
+        const longString1 = "Hello, World!";
+        const shortString1 = "Hello";
+        const result1 = checkStartString(longString1, shortString1);
+        document.getElementById("result").innerHTML += `<b>Input:</b> ${longString1}, ${shortString1} - <b>Output:</b> ${result1}<br>`;
+
+        const longString2 = "Hi there!";
+        const shortString2 = "there";
+        const result2 = checkStartString(longString2, shortString2);
+        document.getElementById("result").innerHTML += `<b>Input:</b> ${longString2}, ${shortString2} - <b>Output:</b> ${result2}<br>`;
+    </script>
+</body>
+</html>

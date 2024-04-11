@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Weather</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+    }
+</style>
+</head>
+<body>
+<script>
+    function greetingWithWeather(name, weather) {
+        let greeting = "";
+        if (weather === "sunny") {
+            greeting = 'Chào ${name}! Hôm nay trời nắng tuyệt vời!';
+        } else if (weather === "rainy") {
+            greeting = 'Chào ${name}! Hôm nay trời mưa, hãy mang theo ô!';
+        } else {
+            greeting = 'Chào ${name}! Hôm nay thời tiết không xác định.';
+        }
+        return greeting;
+    }
+
+    const a = greetingWithWeather("Nguyễn An", "sunny");
+    const b = greetingWithWeather("Lê Nam", "rainy");
+    const c = greetingWithWeather("Trần Tâm", "cloudy");
+
+    document.write('<p>${a}</p>');
+    document.write('<p>${b}</p>');
+    document.write('<p>${c}</p>');
+</script>
+</body>
+</html>

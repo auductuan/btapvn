@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Numbers</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+    }
+</style>
+</head>
+<body>
+<script>
+    function sum(arr) {
+        let a = 0;
+        for (let num of arr) {
+            if (num % 2 === 0) {
+             a += num;
+            }
+        }
+        return a;
+    }
+
+    const array = [2, 2, 3, 4, 5, 6];
+    const result = sum(array);
+    document.write(<p>Sum of even numbers: ${result}</p>);
+</script>
+</body>
+</html>
+
